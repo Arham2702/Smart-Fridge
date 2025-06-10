@@ -10,8 +10,8 @@ GEMINI_API_KEY = "AIzaSyD4GaR0pN5YL7xRzgJ-OqwcNqsRghJ1IQI"
 genai.configure(api_key=GEMINI_API_KEY)
 
 # --- TITLE ---
-st.set_page_config(page_title="SeeQ Inside - Smart Inventory Demo")
-st.title("📦 SeeQ Inside: Smart Inventory Demo")
+st.set_page_config(page_title="SYDAR AI")
+st.title("📦 SYDAR AI: Smart Fridge Demo")
 
 # --- IMAGE UPLOAD ---
 uploaded_file = st.file_uploader("Upload an image of a shelf/fridge/stock area", type=["jpg", "jpeg", "png"])

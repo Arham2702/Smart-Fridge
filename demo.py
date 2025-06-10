@@ -41,8 +41,8 @@ if uploaded_file:
     # --- OPTIONAL: RECIPE SUGGESTIONS ---
     if st.button("Suggest Recipes with These Items"):
         st.subheader("🍳 Recipe Suggestions")
-        recipe_prompt = f"Suggest 3 creative recipes using some of the following items and generate images of what those recipes might finally look like: {detected_text}"
-        recipe_response = genai.GenerativeModel("gemini-2.5-pro-exp-03-25").generate_content(recipe_prompt)
+        recipe_prompt = f"Suggest 3 creative recipes using some of the following items: {detected_text}"
+        recipe_response = genai.GenerativeModel("gemini-1.5-flash").generate_content(recipe_prompt)
         st.markdown(recipe_response.text)
 
 else:
